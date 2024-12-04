@@ -11,8 +11,8 @@ Soru.prototype.cevabiKontrolEt = function(cevap){
 };
 
 let sorular = [
-    new Soru("1-Hangisi javascript paket yönetim uygulamasıdır?",  { a: "Node.js", b: "Typescript", c: "Npm" } , "c"),
-    new Soru("2-Hangisi .net paket yönetim uygulamasıdır?", { a: "Node.js", b: "Nuget", c: "Npm" } , "b"),
-    new Soru("3-Hangisi .net paket yönetim uygulamasıdır?", { a: "Node.js", b: "Nuget", c: "Npm" } , "b"),
-    new Soru("4-Hangisi .net paket yönetim uygulamasıdır?", { a: "Node.js", b: "Nuget", c: "Npm" } , "b")
+    new Soru("1-King-Slayer olarak bilinen karakter kimdir?",  { a: "Eddard Stark", b: "Robert Baraethon", c: "Jamie Lannister" } , "c"),
+    new Soru("2-Cercei Lannister'în en büyük oğlu kimdir ", { a: "Joffrey", b: "Tommen", c: "Bran" } , "a"),
+    new Soru("3-Theon Greyjoy'un kız kardeşinin adı nedir?", { a: "Sansa", b: "Yara", c: "Margaery" } , "b"),
+    new Soru("4-Bran'e yolculuğunda yardımcı olan karakter hangisidir?", { a: "John Snow", b: "Hodor", c: "Hound" } , "b")
 ];
