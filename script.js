@@ -45,6 +45,9 @@ ui.btn_next.addEventListener('click',function(){
     }
    else{
     console.log("Quiz bitti.");
+    ui.quiz_box.classList.remove("active");  
+    ui.score_box.classList.add("active");
+    ui.skoruGoster(quiz.sorular.length,quiz.dogruCevapSayisi);
    }
 });
 
@@ -55,7 +58,9 @@ function optionSelected(option){
     let soru = quiz.soruGetir();
 
     if(soru.cevabiKontrolEt(answer)){
+       
         option.classList.add("correct");
+        quiz.dogruCevapSayisi ++;
         option.insertAdjacentHTML("beforeend",ui.correctIcon);
     }
     else{
@@ -70,6 +75,20 @@ function optionSelected(option){
     ui.btn_next.classList.add("show");
 }
 
+
+
+ui.btn_quit.addEventListener('click',function(){
+    window.location.reload();
+});
+
+
+ui.btn_replay.addEventListener('click',function(){
+    quiz.soruIndex = 0;
+    quiz.dogruCevapSayisi = 0;
+
+    ui.btn_start.click();
+    ui.score_box.classList.remove("active");
+})
 
 
 
