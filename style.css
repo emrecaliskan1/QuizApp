@@ -85,3 +85,10 @@
     pointer-events: auto;
     transform: scale(1);
 }
+
+
+.quiz_box footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
